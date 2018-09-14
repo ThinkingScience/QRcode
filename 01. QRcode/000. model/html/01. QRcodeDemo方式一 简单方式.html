@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#qrcode1 canvas{
+				width:100px;
+				height:100px;
+			}
+		</style>
+	</head>
+	<body>
+	<!-- HTML代码 -->
+	<div id="qrcode1"></div>
+	<div id="qrcode2"></div>
+	
+	<!-- javascript代码 -->
+	<script src="../js/jquery-2.1.4.min.js"></script>
+	<script src="../js/qrcode.js"></script>
+	<script>
+	/* 方式一:简单方式 */
+	new QRCode(document.getElementById('qrcode1'),'需要生成的内容');
+	
+	</script>
+	</body>
+</html>
